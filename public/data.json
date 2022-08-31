@@ -1,9 +1,6 @@
 {
-"orderItems":[
-{"id":"1",
-"fullName":"",
-"address":"",
-"phonenumber":""}],
+"orderItems":[],
+
 "homedata":[
     {"id":"1",
     "item":"thumbs up",
@@ -116,7 +113,13 @@
     }
 
 ],
-"newitems":[{"id":"1","item":"cken","display":"block","price":200,"count":0,"qut":0,"value":false}]
+"newitems":[],
+"Tables":[
+{"id":"1","Table":"Table 1"},
+{"id":"2","Table":"Table 2"},
+{"id":"3","Table":"Table 3"},
+{"id":"4","Table":"Table 4"}
+]
 
 
 

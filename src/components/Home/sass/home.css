@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 .home-section {
   display: -ms-grid;
   display: grid;
+  font-family: 'Montserrat', sans-serif;
   grid-gap: 1%;
   -ms-grid-columns: 15% 20% 20% 40%;
       grid-template-columns: 15% 20% 20% 40%;
@@ -28,21 +30,46 @@
 }
 
 .home-section .finalolp {
-  overflow-y: scroll;
   border: 1px solid black;
-  height: 90vh;
   position: relative;
 }
 
 .home-section .finalolp footer {
   width: 100%;
   padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.home-section .finalolp footer section {
+  padding: 3px;
+}
+
+.home-section .finalolp footer section div:nth-child(1), .home-section .finalolp footer section div:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  position: absolute;
-  bottom: 0;
+}
+
+.home-section .finalolp footer section div:nth-child(2) {
+  border-top: 1px solid grey;
+}
+
+.home-section .finalolp footer section div:nth-child(2) span {
+  margin-top: 10px;
+}
+
+.home-section .finalolp footer section div:nth-child(2) span input[type=radio] {
+  margin-right: 5px;
+}
+
+table th {
+  padding: 15px;
+}
+
+table tbody tr {
+  overflow-y: scroll;
 }
 /*# sourceMappingURL=home.css.map */

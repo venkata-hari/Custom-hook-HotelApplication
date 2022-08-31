@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 function Serachdata({product,Inc1}) {
     return (
@@ -7,12 +7,12 @@ function Serachdata({product,Inc1}) {
    
               
                
-                  <div class="card text-center my-1" style={{display:x.display}} key={x.id}>
+                  <div className="card text-center my-1" style={{display:x.display}} key={x.id}>
               
-               <div class="card-body">
-                 <h5 class="card-title">{x.item}</h5>
-                 <p class="card-text">{x.price}$</p>
-                 <button class="btn btn-dark" onClick={()=>Inc1(x)}>Add</button>
+               <div className="card-body">
+                 <h5 className="card-title">{x.item}</h5>
+                 <p className="card-text">{x.price}$</p>
+                 <button className="btn btn-dark" onClick={()=>Inc1(x)}>Add</button>
                </div>
                </div>
               

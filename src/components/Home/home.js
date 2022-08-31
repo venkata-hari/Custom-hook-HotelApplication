@@ -5,13 +5,14 @@ import Filter from './filter.js'
 import Filterdata from './filterdata'
 import FilterDataOlP from './filterdataolp'
 import Search from './search'
+import Mobile from './Mobile/mobilehome'
 import Searchdata from './serachdata'
 import SerachDataOlp from './finalsearcholp';
 function Home() {
   const{filter,data,f1,Inc,Dec,Inc1,Dec1,total2,product,formSubmit,inputSubmit}=filterForm()
   return (
     <div className='home-section'>
-      
+    <section id="home-section"> 
       <section className="filter">
         <Filter f1={f1}/>
       </section>
@@ -55,8 +56,13 @@ function Home() {
           </footer>
         </table>
       </section>
-    
-    </div>
+    </section>
+  
+  <section className='mobile'>
+    <Mobile/>
+  </section>
+  
+  </div>
   );
 }
 

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-.home-section{
+#home-section{
     display:grid;
     font-family: 'Montserrat', sans-serif;
     grid-gap:1%;
@@ -18,14 +18,12 @@
     margin-left:2%;
   }
   .finalolp{
-    overflow-y: scroll;
     border:1px solid black;
-    height:90vh;
     position: relative;
     footer{
       width:100%;
       padding:10px;
-      position: absolute;
+position:absolute;
       bottom:0;
       section {padding:3px;div:nth-child(1),div:nth-child(2){
         display: flex;
@@ -45,7 +43,22 @@
     }
   }
 }
+
 table th
 {
 padding:15px;
+}
+table tbody tr{
+  overflow-y: scroll;
+}
+.mobile{
+  display:none;
+}
+@media(max-width:730px){
+  #home-section{
+    display:none;
+  }
+  .mobile{
+    display:block;
+  }
 }

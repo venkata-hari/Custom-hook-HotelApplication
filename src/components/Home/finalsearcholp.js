@@ -8,10 +8,10 @@ const Finalsearcholp = ({product,Dec1,Inc1}) => {
                     {x.value?(
                     <tr>
                     <td>{x.item}</td>
-                     <td className='d-flex justify-content-around'>
+                     <td>
 
                       <button className="btn btn-dark" onClick={()=>Dec1(x)}>-</button>  
-                      <span className='my-1'>{x.qut}</span>
+                      <span className='my-1 mx-4'>{x.qut}</span>
                       <button className="btn btn-dark" onClick={()=>Inc1(x)}>+</button>
                         
                     </td>
